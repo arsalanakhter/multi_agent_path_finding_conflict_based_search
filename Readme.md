@@ -7,7 +7,15 @@ This implementation is inspired by multiple repos, as follows:
 - https://github.com/nicofretti/MAPF
 The code in this implementation is heavily influenced by the following work:
 - https://github.com/jainaviral898/mapp-cbs-aifa
-Couple of notes/observations
+
+## How to run
+Run the file main.py
+
+We can define a grid of our choosing for the variable named `grid`.
+Larger grids seem to me taking much longer right now... need to 
+look more into it.
+
+## Couple of notes/observations
 - This is a basic implementation of CBS. Multiple improvement approaches
 exist for CBS, which I further plan to explore. These include
 CBS + Disjoint Splitting
@@ -25,5 +33,8 @@ include Priority based planning as well as Constraint programming or
 Mixed-Integer programming (MIP) based approaches. Some are more focussed on
 path optimality, such as MIPs, and some on speed, such as priority-based
 approaches.
+
+
+
 
 Author - Arsalan Akhter
