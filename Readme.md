@@ -1,3 +1,5 @@
+## MAPF-CBS
+
 A basic implementation of the Conflict-Based Search (CBS) for the Multi-Agent
 Path Finding (MAPF) Problem. The problem is to find a path for multiple
 robots such that they could go through the shared pathways without having
