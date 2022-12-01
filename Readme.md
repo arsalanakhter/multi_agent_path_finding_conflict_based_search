@@ -17,6 +17,10 @@ We can define a grid of our choosing for the variable named `grid`.
 Larger grids seem to me taking much longer right now... need to 
 look more into it.
 
+## Visualization
+
+![](render.svg)
+
 ## Couple of notes/observations
 - This is a basic implementation of CBS. Multiple improvement approaches
 exist for CBS, which I further plan to explore. These include
