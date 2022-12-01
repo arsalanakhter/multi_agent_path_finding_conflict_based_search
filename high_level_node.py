@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-class HighLevelNode(object):
+class HighLevelNode:
     """
     Root node for CBS
     """
