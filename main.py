@@ -42,10 +42,10 @@ from cbs import CBS
 def extract_moves_from_solution(solution):
     # Actions
     WAIT = 0
-    UP = 1
-    DOWN = 2
-    LEFT = 3
-    RIGHT = 4
+    LEFT = 1
+    RIGHT = 2
+    DOWN = 3
+    UP = 4
 
     moves = []
     single_move = []
@@ -58,14 +58,14 @@ def extract_moves_from_solution(solution):
 
             if x2 == x1 and y2 == y1:
                 single_move.append(WAIT)
-            elif x2 == x1 + 1 and y2 == y1:
-                single_move.append(RIGHT)
             elif x2 == x1 - 1 and y2 == y1:
                 single_move.append(LEFT)
-            elif x2 == x1 and y2 == y1 + 1:
-                single_move.append(UP)
+            elif x2 == x1 + 1 and y2 == y1:
+                single_move.append(RIGHT)
             elif x2 == x1 and y2 == y1 - 1:
                 single_move.append(DOWN)
+            elif x2 == x1 and y2 == y1 + 1:
+                single_move.append(UP)
             else:
                 raise ValueError("Wrong Move detected!")
         moves.append(single_move)
@@ -73,7 +73,6 @@ def extract_moves_from_solution(solution):
     # Make them step moves for all agents at one step
     moves2 = [list(i) for i in zip_longest(*moves, fillvalue=0)]
     return moves2
-
 
 def main():
     # grid = """

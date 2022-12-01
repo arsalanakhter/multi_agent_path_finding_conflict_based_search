@@ -35,7 +35,7 @@ class CBS:
             self.env.constraint_dict = P.constraint_dict
             conflict_dict = self.env.get_first_conflict(P.solution)
             if not conflict_dict:
-                print("solution found")
+                # print("A-star solution found")
                 return self.generate_plan(P.solution)
 
             constraint_dict = self.env.create_constraints_from_conflict(
@@ -55,7 +55,7 @@ class CBS:
                 #     return self.generate_plan(new_node.solution)
                 new_node.cost = self.env.compute_solution_cost(
                     new_node.solution)
-                print(new_node.cost)
+                # print(new_node.cost)
 
                 # TODO: ending condition
                 if new_node not in self.closed_set:
